@@ -27,9 +27,8 @@ export default function LandingPage() {
   }, [])
 
   const handleWhatsAppRedirect = () => {
-    // Substitua pelo número real da empresa (formato: 5511999999999)
-    const phoneNumber = "5511999999999"
-    const message = "Olá! Gostaria de saber mais sobre os atendentes virtuais da GIZBERT."
+    const phoneNumber = "5513982211658"
+    const message = "Olá! Gostaria de saber mais sobre os atendentes virtuais da Doutor Pro."
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, "_blank")
   }
@@ -71,7 +70,7 @@ export default function LandingPage() {
     {
       name: "Maria Silva",
       company: "E-commerce Fashion",
-      text: "Aumentamos nossas vendas em 60% após implementar o atendente virtual da GIZBERT. Simplesmente incrível!",
+      text: "Aumentamos nossas vendas em 60% após implementar o atendente virtual da Doutor Pro. Simplesmente incrível!",
       rating: 5,
     },
     {
@@ -100,7 +99,7 @@ export default function LandingPage() {
                 <Sparkles className="h-3 w-3 text-yellow-400 absolute -top-1 -right-1" />
               </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-                GIZBERT
+                Doutor Pro
               </span>
             </div>
             <Button
@@ -182,7 +181,7 @@ export default function LandingPage() {
               Por que escolher a
               <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
                 {" "}
-                GIZBERT
+                Doutor Pro
               </span>
               ?
             </h2>
@@ -220,7 +219,7 @@ export default function LandingPage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Resultados Comprovados</h2>
             <p className="text-xl text-emerald-100 max-w-2xl mx-auto">
-              Números que falam por si só - veja o impacto real da GIZBERT
+              Números que falam por si só - veja o impacto real da Doutor Pro
             </p>
           </div>
 
@@ -250,7 +249,7 @@ export default function LandingPage() {
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">O que nossos clientes dizem</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Histórias reais de transformação e sucesso com a GIZBERT
+              Histórias reais de transformação e sucesso com a Doutor Pro
             </p>
           </div>
 
@@ -284,7 +283,7 @@ export default function LandingPage() {
             <span className="block text-emerald-400">seu atendimento?</span>
           </h2>
           <p className="text-xl text-gray-300 mb-10 leading-relaxed">
-            Junte-se a centenas de empresas que já transformaram seus resultados com a GIZBERT. Comece hoje mesmo e veja
+            Junte-se a centenas de empresas que já transformaram seus resultados com a Doutor Pro. Comece hoje mesmo e veja
             a diferença em 24 horas.
           </p>
           <Button
@@ -313,7 +312,7 @@ export default function LandingPage() {
                   <Sparkles className="h-4 w-4 text-yellow-400 absolute -top-1 -right-1" />
                 </div>
                 <span className="text-3xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
-                  GIZBERT
+                  Doutor Pro
                 </span>
               </div>
               <p className="text-gray-400 mb-6 leading-relaxed max-w-md">
@@ -347,7 +346,7 @@ export default function LandingPage() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-emerald-400" />
-                  <span className="text-gray-300">contato@gizbert.com</span>
+                  <span className="text-gray-300">contato@Doutor Pro.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-emerald-400" />
@@ -371,7 +370,7 @@ export default function LandingPage() {
 
           <div className="border-t border-gray-800 mt-12 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-gray-400 text-sm">© 2024 GIZBERT. Todos os direitos reservados.</p>
+              <p className="text-gray-400 text-sm">© 2024 Doutor Pro. Todos os direitos reservados.</p>
               <div className="flex space-x-6 mt-4 md:mt-0 text-sm text-gray-400">
                 <a href="#" className="hover:text-emerald-400 transition-colors">
                   Política de Privacidade
