@@ -124,7 +124,7 @@ export default function LandingPage() {
               <Sparkles className="h-4 w-4 mr-2" />
               IA de Nova Geração para WhatsApp
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold text-gray-700 mb-6 leading-tight">
               Atendentes Virtuais
               <span className="block bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
                 Inteligentes
@@ -133,8 +133,7 @@ export default function LandingPage() {
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
               Revolucione seu atendimento clínico com nossa IA especialista. Responda clientes 24/7,
-              <strong className="text-emerald-600"> aumente vendas em até 60%</strong> e melhore a satisfação do cliente
-              automaticamente.
+              <strong className="text-emerald-600">organize sua agenda de forma automática</strong> e melhore a satisfação dos pacientes.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button
