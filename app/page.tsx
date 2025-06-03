@@ -41,8 +41,8 @@ export default function LandingPage() {
     },
     {
       icon: Zap,
-      title: "Respostas Instantâneas",
-      description: "IA treinada para responder perguntas complexas em segundos com precisão excepcional",
+      title: "Agenda automática",
+      description: "Nossa IA conversa e organiza os paciêntes na sua agenda sozinha",
     },
     {
       icon: TrendingUp,
@@ -132,7 +132,7 @@ export default function LandingPage() {
               <span className="block text-4xl md:text-5xl text-gray-700">para WhatsApp</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
-              Revolucione seu atendimento com nossa IA avançada. Responda clientes 24/7,
+              Revolucione seu atendimento clínico com nossa IA especialista. Responda clientes 24/7,
               <strong className="text-emerald-600"> aumente vendas em até 60%</strong> e melhore a satisfação do cliente
               automaticamente.
             </p>
@@ -147,6 +147,7 @@ export default function LandingPage() {
                 <ArrowRight className="h-5 w-5 ml-2" />
               </Button>
               <Button
+                onClick={handleWhatsAppRedirect}
                 variant="outline"
                 size="lg"
                 className="text-lg px-10 py-6 rounded-xl border-2 border-emerald-200 text-emerald-700 hover:bg-emerald-50 transition-all duration-300"
