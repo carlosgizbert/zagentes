@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   creator: "Z Agentes",
   publisher: "Z Agentes",
   robots: "index, follow",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
   openGraph: {
     type: "website",
     locale: "pt_BR",
@@ -53,6 +54,10 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

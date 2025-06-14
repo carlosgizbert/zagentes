@@ -39,14 +39,19 @@ export default function LandingPage() {
   const features = [
     {
       icon: Clock,
-      title: 'Responde com áudio',
-      description: 'Sua IA entende e responde áudios de clientes',
+      title: 'Age como um ser humano',
+      description: 'Sua IA entende e também responde em áudios para clientes',
+    },
+    {
+      icon: Clock,
+      title: 'Responde em áudio',
+      description: 'Sua IA entende e também responde em áudios para clientes',
     },
     {
       icon: Zap,
-      title: 'Transfere para humano',
+      title: 'Organiza agendas',
       description:
-        'Nossa IA conversa e organiza os paciêntes na sua agenda sozinha',
+        'Sua IA conversa com cliente e organiza suas agendas sozinha.',
     },
     {
       icon: TrendingUp,
@@ -56,9 +61,9 @@ export default function LandingPage() {
     },
     {
       icon: Users,
-      title: 'Múltiplos Atendentes',
+      title: 'Múltiplos Funcionários de IA',
       description:
-        'Gerencie milhares de atendimentos simultâneos sem perder qualidade ou personalização',
+        'Sua IA conversa com milhares de clientes simultâneos sem perder qualidade no atendimento.',
     },
     {
       icon: Bot,
@@ -106,25 +111,26 @@ export default function LandingPage() {
                 <Bot className='h-8 w-8 text-emerald-600' />
                 <Sparkles className='h-3 w-3 text-yellow-400 absolute -top-1 -right-1' />
               </div>
-              <span className='text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent'>
+              <span className='text-xl sm:text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent'>
                 Z Agentes
               </span>
             </div>
             <Button
               onClick={handleWhatsAppRedirect}
-              className='bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white shadow-lg hover:shadow-xl transition-all duration-300'
+              className='bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 text-sm sm:text-base px-3 sm:px-4 py-2'
             >
-              <MessageCircle className='h-4 w-4 mr-2' />
-              Falar Conosco
+              <MessageCircle className='h-4 w-4' />
+              <span className='hidden sm:inline'>Falar Conosco</span>
+              <span className='sm:hidden'>Contato</span>
             </Button>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className='pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden'>
+      <section className='pt-24 sm:pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden min-h-screen flex items-center'>
         <div className='absolute inset-0 bg-gradient-to-r from-emerald-600/5 to-teal-600/5 rounded-full blur-3xl transform -translate-y-1/2'></div>
-        <div className='max-w-7xl mx-auto text-center relative'>
+        <div className='max-w-7xl mx-auto text-center relative w-full'>
           <div
             className={`transition-all duration-1000 ${
               isVisible
@@ -134,21 +140,21 @@ export default function LandingPage() {
           >
             <div className='inline-flex items-center px-4 py-2 bg-emerald-100 rounded-full text-emerald-700 text-sm font-medium mb-8'>
               <Sparkles className='h-4 w-4 mr-2' />
-              IA de Nova Geração para WhatsApp
+              <span className='text-xs sm:text-sm'>IA de Nova Geração para WhatsApp</span>
             </div>
-            <h1 className='text-5xl md:text-5xl font-bold  mb-6'>
+            <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight'>
               Automatize seu suporte e
-              <span className='mt-3 block'>
+              <span className='mt-2 sm:mt-3 block'>
                 vendas com{' '}
                 <span className='bg-gradient-to-r from-emerald-500 to-teal-700 bg-clip-text text-transparent'>
                   funcionários de IA
                 </span>
               </span>
-              <span className='mt-3 block text-5xl md:text-5xl '>
+              <span className='mt-2 sm:mt-3 block text-3xl sm:text-4xl md:text-5xl'>
                 que não dormem
               </span>
             </h1>
-            <p className='max-w-xl text-gray-600 mb-10 mx-auto leading-relaxed'>
+            <p className='max-w-xl text-gray-600 mb-10 mx-auto leading-relaxed text-base sm:text-lg px-4'>
               Revolucione seu atendimento com funcionários de IA especialistas,
               prontos para escalar atendimento, vendas e suporte.
               <strong className='text-emerald-600'>
@@ -157,15 +163,14 @@ export default function LandingPage() {
               </strong>
               .
             </p>
-            <div className='flex flex-col sm:flex-row gap-6 justify-center items-center'>
+            <div className='flex flex-col sm:flex-row gap-6 justify-center items-center px-4'>
               <Button
                 onClick={handleWhatsAppRedirect}
                 size='lg'
-                className='bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white text-lg px-10 py-6 rounded-xl shadow-2xl hover:shadow-emerald-500/25 transition-all duration-300 transform hover:scale-105'
+                className='bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white text-lg px-8 sm:px-10 py-6 rounded-xl shadow-2xl hover:shadow-emerald-500/25 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto'
               >
-                <MessageCircle className='h-6 w-6 mr-3' />
+                <MessageCircle className='h-6 w-6 ' />
                 Teste agora grátis
-                <ArrowRight className='h-5 w-5 ml-2' />
               </Button>
             </div>
           </div>
@@ -303,7 +308,7 @@ export default function LandingPage() {
                 onClick={handleWhatsAppRedirect}
                 className='bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white w-full'
               >
-                <MessageCircle className='h-4 w-4 mr-2' />
+                <MessageCircle className='h-4 w-4' />
                 Entrar em contato
               </Button>
             </div>

@@ -4,6 +4,28 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix for iOS Safari viewport issues */
+@supports (-webkit-touch-callout: none) {
+  .min-h-screen {
+    min-height: -webkit-fill-available;
+  }
+}
+
+/* Ensure proper scaling on mobile devices */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Fix for iOS Safari flexbox issues */
+.flex {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
 }
 
 @layer utilities {
