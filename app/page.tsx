@@ -164,8 +164,8 @@ export default function LandingPage() {
                 Z Agentes
               </span>
             </div>
-            <WhatsAppButton className='bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 text-sm sm:text-base px-3 sm:px-4 py-2'>
-              <span className='hidden sm:inline'>Falar Conosco</span>
+            <WhatsAppButton className='bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 text-sm sm:text-base py-2'>
+              <span className='hidden sm:inline'>Fale conosco</span>
               <span className='sm:hidden'>Contato</span>
             </WhatsAppButton>
           </div>
@@ -178,9 +178,9 @@ export default function LandingPage() {
           <div className='absolute inset-0 bg-gradient-to-r from-emerald-600/5 to-teal-600/5 rounded-full blur-3xl transform -translate-y-1/2'></div>
           <div className='max-w-7xl mx-auto text-center relative w-full'>
             <div className='opacity-100 translate-y-0 transition-all duration-1000'>
-              <div className='inline-flex items-center px-4 py-2 border-2 border-emerald-800 rounded-full text-gray-300 text-sm font-medium mb-8'>
+            <div className='inline-flex items-center px-4 py-2 border border-gray-700 rounded-full text-gray-300 text-sm font-medium mb-8'>
                 <Sparkles className='h-4 w-4 mr-2 text-emerald-500' />
-                <span className='text-xs text-emerald-500 sm:text-sm'>
+                <span className='text-xs bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent sm:text-sm'>
                   IA de Nova Geração para WhatsApp
                 </span>
               </div>
@@ -191,7 +191,7 @@ export default function LandingPage() {
                 Automatize seu suporte e
                 <span className=' mt-2 sm:mt-3 block'>
                   vendas com{' '}
-                  <span className='bg-gradient-to-r from-emerald-500 to-teal-700 bg-clip-text text-transparent'>
+                  <span className='bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent'>
                     funcionários de IA
                   </span>
                 </span>
@@ -203,7 +203,7 @@ export default function LandingPage() {
                 Revolucione seu atendimento com funcionários de IA
                 especialistas, prontos para escalar atendimento, vendas e
                 suporte.
-                <strong className='bg-gradient-to-r from-emerald-500 to-teal-700 bg-clip-text text-transparent'>
+                <strong className='bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent'>
                   {' '}
                   organize sua agenda de forma automática
                 </strong>
@@ -234,16 +234,16 @@ export default function LandingPage() {
                 className='text-4xl md:text-5xl font-bold text-gray-200 mb-6'
               >
                 Transforme seu WhatsApp em uma
-                <span className='bg-gradient-to-r from-emerald-500 to-teal-700 bg-clip-text text-transparent'>
+                <span className='mt-2 block bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent'>
                   {' '}
-                  máquina de vendas
+                  máquina de vendasF
                 </span>
               </SEOHeading>
               <p className='text-gray-300 max-w-3xl mx-auto leading-relaxed text-lg'>
                 Nossa tecnologia de IA avançada já ajudou empresas a
                 <span className='block'>
-                <strong className='text-emerald-600'> aumentar vendas</strong> e
-                <strong className='text-emerald-600'>
+                <strong className='bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent'> aumentar vendas</strong> e
+                <strong className='bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent'>
                   {' '}
                   reduzir custos de atendimento
                 </strong>
@@ -254,29 +254,29 @@ export default function LandingPage() {
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16'>
               {features.map((feature, index) => (
                 <Card
-                  key={index}
-                  className='group border-0 shadow-lg hover:shadow-2xl transition-all duration-500 bg-gradient-to-br from-white to-gray-50/50 hover:from-emerald-50/50 hover:to-teal-50/50 hover:scale-105'
-                >
-                  <CardContent className='p-8 text-center'>
-                    <div className='relative mb-6'>
-                      <div className='w-16 h-16 bg-gradient-to-r from-emerald-100 to-teal-100 rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300'>
-                        <feature.icon className='h-8 w-8 text-emerald-600' />
-                      </div>
-                      <div className='absolute -top-2 -right-2 w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center'>
-                        <CheckCircle className='h-4 w-4 text-white' />
-                      </div>
+                key={index}
+                className='cursor-default group border border-gray-800 shadow-lg hover:shadow-2xl transition-all duration-500 bg-gray-900'
+              >
+                <CardContent className='p-8 text-center'>
+                  <div className='relative mb-6'>
+                    <div className='w-16 h-16 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300'>
+                      <feature.icon className='h-8 w-8 text-gray-300' />
                     </div>
-                    <SEOHeading
-                      level={3}
-                      className='text-xl font-bold mb-4 text-gray-900'
-                    >
-                      {feature.title}
-                    </SEOHeading>
-                    <p className='text-gray-600 text-sm leading-relaxed'>
-                      {feature.description}
-                    </p>
-                  </CardContent>
-                </Card>
+                    <div className='absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full flex items-center justify-center'>
+                      <CheckCircle className='h-4 w-4 text-white' />
+                    </div>
+                  </div>
+                  <SEOHeading
+                    level={3}
+                    className='text-xl font-bold mb-4 text-gray-200'
+                  >
+                    {feature.title}
+                  </SEOHeading>
+                  <p className='text-gray-300 text-sm leading-relaxed'>
+                    {feature.description}
+                  </p>
+                </CardContent>
+              </Card>
               ))}
             </div>
 
