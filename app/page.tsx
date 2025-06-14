@@ -1,10 +1,8 @@
-import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { WhatsAppButton } from '@/components/whatsapp-button';
 import { SEOHeading } from '@/components/seo-heading';
 import {
   Bot,
-  Zap,
   Users,
   Phone,
   MapPin,
@@ -17,7 +15,6 @@ import {
   Calendar,
   DollarSign,
   Shield,
-  Settings,
 } from 'lucide-react';
 import type { Metadata } from 'next';
 
@@ -57,7 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: 'https://zagentes.com',
+    url: 'https://zagentes.com.br',
     title:
       'Z Agentes - Agentes de IA para WhatsApp | Automatize Vendas e Atendimento',
     description:
@@ -153,15 +150,15 @@ export default function LandingPage() {
   ];
 
   return (
-    <div className='bg-gradient-to-br from-slate-50 via-white to-emerald-50'>
+    <div className='bg-gray-900'>
       {/* Header */}
-      <header className='fixed top-0 w-full bg-white/80 backdrop-blur-lg border-b border-gray-200/50 z-50'>
+      <header className='fixed top-0 w-full bg-gray/80 backdrop-blur-lg border-b border-gray-300/20 z-50'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4'>
           <div className='flex items-center justify-between'>
             <div className='flex items-center space-x-3'>
               <div className='relative'>
                 <Bot className='h-8 w-8 text-emerald-400' />
-                <Sparkles className='h-3 w-3 text-yellow-400 absolute -top-1 -right-1' />
+                <Sparkles className='h-3 w-3 text-amber-400 absolute -top-1 -right-1' />
               </div>
               <span className='text-3xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent'>
                 Z Agentes
@@ -181,18 +178,18 @@ export default function LandingPage() {
           <div className='absolute inset-0 bg-gradient-to-r from-emerald-600/5 to-teal-600/5 rounded-full blur-3xl transform -translate-y-1/2'></div>
           <div className='max-w-7xl mx-auto text-center relative w-full'>
             <div className='opacity-100 translate-y-0 transition-all duration-1000'>
-              <div className='inline-flex items-center px-4 py-2 bg-emerald-100 rounded-full text-emerald-700 text-sm font-medium mb-8'>
-                <Sparkles className='h-4 w-4 mr-2' />
-                <span className='text-xs sm:text-sm'>
+              <div className='inline-flex items-center px-4 py-2 border-2 border-emerald-800 rounded-full text-gray-300 text-sm font-medium mb-8'>
+                <Sparkles className='h-4 w-4 mr-2 text-emerald-500' />
+                <span className='text-xs text-emerald-500 sm:text-sm'>
                   IA de Nova Geração para WhatsApp
                 </span>
               </div>
               <SEOHeading
                 level={1}
-                className='text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight'
+                className='text-3xl text-gray-100 sm:text-4xl md:text-5xl font-bold mb-6 leading-tight'
               >
                 Automatize seu suporte e
-                <span className='mt-2 sm:mt-3 block'>
+                <span className=' mt-2 sm:mt-3 block'>
                   vendas com{' '}
                   <span className='bg-gradient-to-r from-emerald-500 to-teal-700 bg-clip-text text-transparent'>
                     funcionários de IA
@@ -202,11 +199,11 @@ export default function LandingPage() {
                   que não dormem
                 </span>
               </SEOHeading>
-              <p className='max-w-xl text-gray-600 mb-10 mx-auto leading-relaxed text-base sm:text-lg px-4'>
+              <p className='text-gray-300 max-w-xl  mb-10 mx-auto leading-relaxed text-base sm:text-lg px-4'>
                 Revolucione seu atendimento com funcionários de IA
                 especialistas, prontos para escalar atendimento, vendas e
                 suporte.
-                <strong className='text-emerald-600'>
+                <strong className='bg-gradient-to-r from-emerald-500 to-teal-700 bg-clip-text text-transparent'>
                   {' '}
                   organize sua agenda de forma automática
                 </strong>
@@ -226,16 +223,15 @@ export default function LandingPage() {
 
         {/* Features Section */}
         <section
-          className='bg-white relative'
+          className='bg-gray-900 relative'
           aria-labelledby='features-heading'
         >
-          <div className='absolute inset-0 bg-gradient-to-b from-gray-50/50 to-white'></div>
           <div className='max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative'>
             <div className='text-center mb-12'>
               <SEOHeading
                 level={2}
                 id='features-heading'
-                className='text-4xl md:text-5xl font-bold text-gray-900 mb-6'
+                className='text-4xl md:text-5xl font-bold text-gray-200 mb-6'
               >
                 Transforme seu WhatsApp em uma
                 <span className='bg-gradient-to-r from-emerald-500 to-teal-700 bg-clip-text text-transparent'>
@@ -243,13 +239,15 @@ export default function LandingPage() {
                   máquina de vendas
                 </span>
               </SEOHeading>
-              <p className='text-gray-600 max-w-3xl mx-auto leading-relaxed text-lg'>
+              <p className='text-gray-300 max-w-3xl mx-auto leading-relaxed text-lg'>
                 Nossa tecnologia de IA avançada já ajudou empresas a
+                <span className='block'>
                 <strong className='text-emerald-600'> aumentar vendas</strong> e
                 <strong className='text-emerald-600'>
                   {' '}
                   reduzir custos de atendimento
                 </strong>
+                </span>
               </p>
             </div>
 
@@ -320,11 +318,11 @@ export default function LandingPage() {
             <div className='text-center mb-20'>
               <SEOHeading
                 level={3}
-                className='text-2xl md:text-3xl font-bold text-gray-900 mb-4'
+                className='text-2xl md:text-3xl font-bold text-gray-200 mb-4'
               >
                 Pronto para revolucionar seu atendimento?
               </SEOHeading>
-              <p className='text-gray-600 mb-8 max-w-md mx-auto'>
+              <p className='text-gray-300 mb-8 max-w-md mx-auto'>
                 Junte-se a centenas de empresas que já transformaram seus
                 resultados com a Z Agentes
               </p>
@@ -333,10 +331,9 @@ export default function LandingPage() {
                   size='lg'
                   className='bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white text-lg px-8 py-4 rounded-xl shadow-2xl hover:shadow-emerald-500/25 transition-all duration-300 transform hover:scale-105'
                 >
-                  Começar Agora - Grátis
-                  <ArrowRight className='h-5 w-5 ml-2' />
+                  Começar agora
                 </WhatsAppButton>
-                <div className='text-sm text-gray-500'>
+                <div className='text-sm text-gray-300'>
                   ⚡ Configuração em menos de 24h
                 </div>
               </div>
@@ -345,7 +342,7 @@ export default function LandingPage() {
         </section>
 
         <section
-          className='py-24 bg-gray-50'
+          className='py-24 bg-gradient-to-r from-emerald-600 to-teal-600'
           aria-labelledby='testimonials-heading'
         >
           <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -353,11 +350,11 @@ export default function LandingPage() {
               <SEOHeading
                 level={2}
                 id='testimonials-heading'
-                className='text-4xl md:text-5xl font-bold text-gray-900 mb-6'
+                className='text-4xl md:text-5xl font-bold text-gray-100 mb-6'
               >
                 Quem usa, indica
               </SEOHeading>
-              <p className='text-xl text-gray-600 max-w-2xl mx-auto'>
+              <p className='text-xl text-gray-100 max-w-2xl mx-auto'>
                 Histórias reais de transformação e sucesso com a Z Agentes
               </p>
             </div>
