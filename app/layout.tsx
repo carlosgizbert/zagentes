@@ -6,41 +6,41 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Doutor Pro - Atendentes Virtuais Inteligentes para WhatsApp | IA para Empresas",
+  title: "Z Agentes - Agentes de IA para WhatsApp | IA para Empresas",
   description:
-    "Automatize seu atendimento no WhatsApp com atendentes virtuais inteligentes da Doutor Pro. Aumente vendas, reduza custos e atenda clientes 24/7 com nossa IA avançada.",
+    "Automatize seu atendimento no WhatsApp com agentes inteligentes da Z Agentes. Aumente vendas, reduza custos e atenda clientes 24/7 com nossa IA avançada.",
   keywords:
     "atendente virtual whatsapp, chatbot whatsapp, automação whatsapp, IA para empresas, atendimento automatizado, bot whatsapp business",
-  authors: [{ name: "Doutor Pro" }],
-  creator: "Doutor Pro",
-  publisher: "Doutor Pro",
+  authors: [{ name: "Z Agentes" }],
+  creator: "Z Agentes",
+  publisher: "Z Agentes",
   robots: "index, follow",
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://Doutor Pro.com",
-    title: "Doutor Pro - Atendentes Virtuais Inteligentes para WhatsApp",
+    url: "https://Z Agentes.com",
+    title: "Z Agentes - Agentes de IA para WhatsApp",
     description:
-      "Automatize seu atendimento no WhatsApp com atendentes virtuais inteligentes. Aumente vendas e melhore a satisfação do cliente com nossa IA avançada.",
-    siteName: "Doutor Pro",
+      "Automatize seu atendimento no WhatsApp com agentes inteligentes. Aumente vendas e melhore a satisfação do cliente com nossa IA avançada.",
+    siteName: "Z Agentes",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Doutor Pro - Atendentes Virtuais para WhatsApp",
+        alt: "Z Agentes - Agentes de IA para WhatsApp",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Doutor Pro - Atendentes Virtuais Inteligentes para WhatsApp",
+    title: "Z Agentes - Agentes de IA para WhatsApp",
     description:
-      "Automatize seu atendimento no WhatsApp com atendentes virtuais inteligentes. Aumente vendas e melhore a satisfação do cliente.",
+      "Automatize seu atendimento no WhatsApp com agentes de IA. Aumente vendas e melhore a satisfação do cliente.",
     images: ["/og-image.jpg"],
   },
   alternates: {
-    canonical: "https://Doutor Pro.com",
+    canonical: "https://Z Agentes.com",
   },
     generator: 'v0.dev'
 }
@@ -59,17 +59,17 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Doutor Pro",
+              name: "Z Agentes",
               description: "Empresa especializada em atendentes virtuais inteligentes para WhatsApp",
-              url: "https://Doutor Pro.com",
-              logo: "https://Doutor Pro.com/logo.png",
+              url: "https://Z Agentes.com",
+              logo: "https://Z Agentes.com/logo.png",
               contactPoint: {
                 "@type": "ContactPoint",
                 telephone: "+55-11-99999-9999",
                 contactType: "customer service",
                 availableLanguage: "Portuguese",
               },
-              sameAs: ["https://www.linkedin.com/company/Doutor Pro", "https://www.instagram.com/Doutor Pro"],
+              sameAs: ["https://www.linkedin.com/company/Z Agentes", "https://www.instagram.com/Z Agentes"],
               service: {
                 "@type": "Service",
                 name: "Atendentes Virtuais para WhatsApp",
