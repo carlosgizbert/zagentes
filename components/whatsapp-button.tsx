@@ -13,7 +13,7 @@ export function WhatsAppButton({ children, className, size = 'default' }: WhatsA
   const handleWhatsAppRedirect = () => {
     const phoneNumber = '5513982211658';
     const message =
-      'Olá! Gostaria de saber mais sobre os funcionarios virtuais da Z Agentes.';
+      'Olá! Gostaria de saber mais sobre os agentes inteligentes da Z Agentes.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
     )}`;
