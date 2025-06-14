@@ -7,15 +7,18 @@ import {
   Bot,
   Zap,
   Users,
-  Clock,
-  TrendingUp,
   Phone,
-  Mail,
   MapPin,
   Star,
   CheckCircle,
   ArrowRight,
   Sparkles,
+  Brain,
+  Mic,
+  Calendar,
+  DollarSign,
+  Shield,
+  Settings,
 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
@@ -38,44 +41,39 @@ export default function LandingPage() {
 
   const features = [
     {
-      icon: Clock,
-      title: 'Age como um ser humano',
-      description: 'Sua IA entende e também responde em áudios para clientes',
+      icon: Brain,
+      title: 'IA com Inteligência Humana',
+      description: 'Nossa IA entende contexto, emoções e intenções como um atendente experiente, proporcionando conversas naturais e eficazes.',
     },
     {
-      icon: Clock,
-      title: 'Responde em áudio',
-      description: 'Sua IA entende e também responde em áudios para clientes',
+      icon: Mic,
+      title: 'Comunicação por Áudio',
+      description: 'Receba e envie mensagens de voz automaticamente. Sua IA processa áudios e responde de forma natural, mantendo a humanidade do atendimento.',
     },
     {
-      icon: Zap,
-      title: 'Organiza agendas',
-      description:
-        'Sua IA conversa com cliente e organiza suas agendas sozinha.',
+      icon: Calendar,
+      title: 'Agendamento Inteligente',
+      description: 'Sua IA agenda consultas, reuniões e compromissos automaticamente, sincronizando com sua agenda e enviando lembretes personalizados.',
     },
     {
-      icon: TrendingUp,
-      title: 'Aumento de Vendas',
-      description:
-        'Converta mais leads em vendas com atendimento personalizado e estratégico',
+      icon: DollarSign,
+      title: 'Vendas Automatizadas',
+      description: 'Converta leads em vendas 24/7. Nossa IA identifica oportunidades, apresenta produtos e fecha negócios enquanto você dorme.',
     },
     {
       icon: Users,
-      title: 'Múltiplos Funcionários de IA',
-      description:
-        'Sua IA conversa com milhares de clientes simultâneos sem perder qualidade no atendimento.',
+      title: 'Atendimento Ilimitado',
+      description: 'Atenda milhares de clientes simultaneamente sem perder qualidade. Cada conversa é personalizada e estratégica para seu negócio.',
     },
     {
-      icon: Bot,
-      title: 'IA Personalizada',
-      description:
-        'Treinamos a IA especificamente para seu negócio, produtos e tom de voz da marca',
+      icon: Shield,
+      title: 'IA Personalizada para sua Marca',
+      description: 'Treinamos a IA com seu tom de voz, produtos e processos específicos. Ela se torna uma extensão perfeita da sua equipe.',
     },
     {
-      icon: MessageCircle,
-      title: 'Integração Simples',
-      description:
-        'Configuração rápida e fácil no seu WhatsApp Business em menos de 24 horas',
+      icon: Settings,
+      title: 'Integração Instantânea',
+      description: 'Configure em menos de 24 horas. Conectamos diretamente ao seu WhatsApp Business sem complicações ou mudanças na sua rotina.',
     },
   ];
 
@@ -181,37 +179,94 @@ export default function LandingPage() {
         <div className='absolute inset-0 bg-gradient-to-b from-gray-50/50 to-white'></div>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative'>
           <div className='text-center mb-20'>
+            <div className='inline-flex items-center px-4 py-2 bg-emerald-100 rounded-full text-emerald-700 text-sm font-medium mb-6'>
+              <Zap className='h-4 w-4 mr-2' />
+              <span>Resultados Comprovados</span>
+            </div>
             <h2 className='text-4xl md:text-5xl font-bold text-gray-900 mb-6'>
-              Muito mais que chatbots tradicionais
+              Transforme seu WhatsApp em uma 
+              <span className='bg-gradient-to-r from-emerald-500 to-teal-700 bg-clip-text text-transparent'> máquina de vendas</span>
             </h2>
-            <p className=' text-gray-600 max-w-3xl mx-auto leading-relaxed'>
-              Nossa tecnologia de ponta transforma completamente a experiência
-              de atendimento no WhatsApp, gerando resultados excepcionais para
-              seu negócio
+            <p className=' text-gray-600 max-w-3xl mx-auto leading-relaxed text-lg'>
+              Nossa tecnologia de IA avançada já ajudou centenas de empresas a 
+              <strong className='text-emerald-600'> aumentar vendas em até 300%</strong> e 
+              <strong className='text-emerald-600'> reduzir custos de atendimento em 80%</strong>
             </p>
           </div>
 
-          <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+          <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16'>
             {features.map((feature, index) => (
               <Card
                 key={index}
-                className='group border-0 shadow-lg hover:shadow-2xl transition-all duration-500 bg-gradient-to-br from-white to-gray-50/50 hover:from-emerald-50/50 hover:to-teal-50/50'
+                className='group border-0 shadow-lg hover:shadow-2xl transition-all duration-500 bg-gradient-to-br from-white to-gray-50/50 hover:from-emerald-50/50 hover:to-teal-50/50 hover:scale-105'
               >
                 <CardContent className='p-8 text-center'>
                   <div className='relative mb-6'>
                     <div className='w-16 h-16 bg-gradient-to-r from-emerald-100 to-teal-100 rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300'>
                       <feature.icon className='h-8 w-8 text-emerald-600' />
                     </div>
+                    <div className='absolute -top-2 -right-2 w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center'>
+                      <CheckCircle className='h-4 w-4 text-white' />
+                    </div>
                   </div>
                   <h3 className='text-xl font-bold mb-4 text-gray-900'>
                     {feature.title}
                   </h3>
-                  <p className='text-gray-60 text-sm 0 leading-relaxed'>
+                  <p className='text-gray-600 text-sm leading-relaxed'>
                     {feature.description}
                   </p>
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          {/* Stats Section */}
+          <div className='bg-gradient-to-r from-emerald-600 to-teal-600 rounded-2xl p-8 md:p-12 text-white text-center mb-16'>
+            <h3 className='text-2xl md:text-3xl font-bold mb-8'>
+              Resultados que falam por si
+            </h3>
+            <div className='grid grid-cols-2 md:grid-cols-4 gap-8'>
+              <div>
+                <div className='text-3xl md:text-4xl font-bold mb-2'>300%</div>
+                <div className='text-emerald-100'>Aumento em vendas</div>
+              </div>
+              <div>
+                <div className='text-3xl md:text-4xl font-bold mb-2'>80%</div>
+                <div className='text-emerald-100'>Redução de custos</div>
+              </div>
+              <div>
+                <div className='text-3xl md:text-4xl font-bold mb-2'>24/7</div>
+                <div className='text-emerald-100'>Atendimento disponível</div>
+              </div>
+              <div>
+                <div className='text-3xl md:text-4xl font-bold mb-2'>500+</div>
+                <div className='text-emerald-100'>Clientes satisfeitos</div>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA Section */}
+          <div className='text-center'>
+            <h3 className='text-2xl md:text-3xl font-bold text-gray-900 mb-4'>
+              Pronto para revolucionar seu atendimento?
+            </h3>
+            <p className='text-gray-600 mb-8 max-w-2xl mx-auto'>
+              Junte-se a centenas de empresas que já transformaram seus resultados com a Z Agentes
+            </p>
+            <div className='flex flex-col sm:flex-row gap-4 justify-center items-center'>
+              <Button
+                onClick={handleWhatsAppRedirect}
+                size='lg'
+                className='bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white text-lg px-8 py-4 rounded-xl shadow-2xl hover:shadow-emerald-500/25 transition-all duration-300 transform hover:scale-105'
+              >
+                <MessageCircle className='h-5 w-5 mr-2' />
+                Começar Agora - Grátis
+                <ArrowRight className='h-5 w-5 ml-2' />
+              </Button>
+              <div className='text-sm text-gray-500'>
+                ⚡ Configuração em menos de 24h
+              </div>
+            </div>
           </div>
         </div>
       </section>
