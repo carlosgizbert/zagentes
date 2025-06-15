@@ -20,9 +20,9 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title:
-    'Z Agentes - Agentes de IA para WhatsApp | Automatize Vendas e Atendimento',
+    'Z Agentes - Funcionários de IA para WhatsApp | Automatize Vendas e Atendimento',
   description:
-    'Transforme seu WhatsApp em uma máquina de vendas com agentes de IA inteligentes. Aumente vendas em 300%, reduza custos em 80% e atenda clientes 24/7. Configuração em menos de 24h.',
+    'Transforme seu WhatsApp em uma máquina de vendas com Funcionários de IA inteligentes. Aumente vendas em 300%, reduza custos em 80% e atenda clientes 24/7. Configuração em menos de 24h.',
   keywords: [
     'agente virtual whatsapp',
     'chatbot whatsapp business',
@@ -56,24 +56,24 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     url: 'https://zagentes.com.br',
     title:
-      'Z Agentes - Agentes de IA para WhatsApp | Automatize Vendas e Atendimento',
+      'Z Agentes - Funcionários de IA para WhatsApp | Automatize Vendas e Atendimento',
     description:
-      'Transforme seu WhatsApp em uma máquina de vendas com agentes de IA inteligentes. Aumente vendas em 300%, reduza custos em 80% e atenda clientes 24/7.',
+      'Transforme seu WhatsApp em uma máquina de vendas com Funcionários de IA inteligentes. Aumente vendas em 300%, reduza custos em 80% e atenda clientes 24/7.',
     siteName: 'Z Agentes',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Z Agentes - Agentes de IA para WhatsApp',
+        alt: 'Z Agentes - Funcionários de IA para WhatsApp',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Z Agentes - Agentes de IA para WhatsApp',
+    title: 'Z Agentes - Funcionários de IA para WhatsApp',
     description:
-      'Transforme seu WhatsApp em uma máquina de vendas com agentes de IA inteligentes. Aumente vendas em 300% e reduza custos em 80%.',
+      'Transforme seu WhatsApp em uma máquina de vendas com Funcionários de IA inteligentes. Aumente vendas em 300% e reduza custos em 80%.',
     images: ['/og-image.jpg'],
     creator: '@zagentes',
   },
@@ -174,7 +174,7 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <main>
-        <section className='pt-24 sm:pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden flex items-center'>
+        <section className='pt-28 sm:pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden flex items-center'>
           <div className='absolute inset-0 bg-gradient-to-r from-emerald-600/5 to-teal-600/5 rounded-full blur-3xl transform -translate-y-1/2'></div>
           <div className='max-w-7xl mx-auto text-center relative w-full'>
             <div className='opacity-100 translate-y-0 transition-all duration-1000'>
@@ -200,19 +200,17 @@ export default function LandingPage() {
                 </span>
               </SEOHeading>
               <p className='text-gray-300 max-w-xl  mb-10 mx-auto leading-relaxed text-base sm:text-lg px-4'>
-                Revolucione seu atendimento com funcionários de IA
-                especialistas, prontos para escalar atendimento, vendas e
-                suporte.
-                <strong className='bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent'>
+                Atenda 24hr e <strong className='bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent'>
                   {' '}
                   organize sua agenda de forma automática
-                </strong>
-                .
+                </strong> com funcionários de IA
+                especialistas, prontos para escalar seu atendimento, suas vendas e
+                suporte.
               </p>
               <div className='flex flex-col sm:flex-row gap-6 justify-center items-center px-4'>
                 <WhatsAppButton
                   size='lg'
-                  className='bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white text-lg px-8 sm:px-10 py-6 rounded-xl shadow-2xl hover:shadow-emerald-500/25 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto'
+                  className='bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white text-lg px-8 sm:px-10 py-6 rounded-xl shadow-2xl shadow-emerald-500/10 hover:shadow-emerald-500/25  transition-all duration-300 transform hover:scale-105 w-full sm:w-auto'
                 >
                   Teste agora grátis
                 </WhatsAppButton>
@@ -236,7 +234,7 @@ export default function LandingPage() {
                 Transforme seu WhatsApp em uma
                 <span className='mt-2 block bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent'>
                   {' '}
-                  máquina de vendasF
+                  máquina de vendas
                 </span>
               </SEOHeading>
               <p className='text-gray-300 max-w-3xl mx-auto leading-relaxed text-lg'>

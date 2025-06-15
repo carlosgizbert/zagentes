@@ -12,10 +12,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://zagentes.com'),
   title: {
-    default: "Z Agentes - Agentes de IA para WhatsApp | Automatize Vendas e Atendimento",
+    default: "Z Agentes - Funcionários de IA para WhatsApp | Automatize Vendas e Atendimento",
     template: "%s | Z Agentes"
   },
-  description: "Transforme seu WhatsApp em uma máquina de vendas com agentes de IA inteligentes. Aumente vendas em 300%, reduza custos em 80% e atenda clientes 24/7. Configuração em menos de 24h.",
+  description: "Transforme seu WhatsApp em uma máquina de vendas com Funcionários de IA inteligentes. Aumente vendas em 300%, reduza custos em 80% e atenda clientes 24/7. Configuração em menos de 24h.",
   keywords: [
     "agente virtual whatsapp",
     "chatbot whatsapp business", 
@@ -62,23 +62,23 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     url: "https://zagentes.com",
-    title: "Z Agentes - Agentes de IA para WhatsApp | Automatize Vendas e Atendimento",
-    description: "Transforme seu WhatsApp em uma máquina de vendas com agentes de IA inteligentes. Aumente vendas em 300%, reduza custos em 80% e atenda clientes 24/7.",
+    title: "Z Agentes - Funcionários de IA para WhatsApp | Automatize Vendas e Atendimento",
+    description: "Transforme seu WhatsApp em uma máquina de vendas com Funcionários de IA inteligentes. Aumente vendas em 300%, reduza custos em 80% e atenda clientes 24/7.",
     siteName: "Z Agentes",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Z Agentes - Agentes de IA para WhatsApp",
+        alt: "Z Agentes - Funcionários de IA para WhatsApp",
         type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Z Agentes - Agentes de IA para WhatsApp",
-    description: "Transforme seu WhatsApp em uma máquina de vendas com agentes de IA inteligentes. Aumente vendas em 300% e reduza custos em 80%.",
+    title: "Z Agentes - Funcionários de IA para WhatsApp",
+    description: "Transforme seu WhatsApp em uma máquina de vendas com Funcionários de IA inteligentes. Aumente vendas em 300% e reduza custos em 80%.",
     images: ["/og-image.jpg"],
     creator: "@zagentes",
     site: "@zagentes",

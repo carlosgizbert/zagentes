@@ -1,6 +1,6 @@
 # Z Agentes - Landing Page
 
-Landing page otimizada para SEO com SSG (Static Site Generation) para a Z Agentes, empresa especializada em agentes de IA para WhatsApp.
+Landing page otimizada para SEO com SSG (Static Site Generation) para a Z Agentes, empresa especializada em Funcionários de IA para WhatsApp.
 
 ## 🚀 Otimizações SEO Implementadas
 
@@ -111,7 +111,7 @@ npm run type-check
 ### Metadados
 ```typescript
 {
-  title: "Z Agentes - Agentes de IA para WhatsApp",
+  title: "Z Agentes - Funcionários de IA para WhatsApp",
   description: "Transforme seu WhatsApp em uma máquina de vendas...",
   keywords: ["agente virtual whatsapp", "chatbot whatsapp business"],
   openGraph: { /* ... */ },

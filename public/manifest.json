@@ -1,7 +1,7 @@
 {
-  "name": "Z Agentes - Agentes de IA para WhatsApp",
+  "name": "Z Agentes - Funcionários de IA para WhatsApp",
   "short_name": "Z Agentes",
-  "description": "Transforme seu WhatsApp em uma máquina de vendas com agentes de IA inteligentes",
+  "description": "Transforme seu WhatsApp em uma máquina de vendas com Funcionários de IA inteligentes",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
