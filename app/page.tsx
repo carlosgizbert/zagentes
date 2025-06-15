@@ -132,19 +132,19 @@ export default function LandingPage() {
     {
       name: 'Alexandra Martins',
       company: 'AM Odontologia',
-      text: 'O agendamento automatizado revolucionou nosso atendimento. A IA envia promoções e faz agendamentos perfeitamente.',
+      text: 'A IA conversa com meus pacientes e cuida da minha agenda enquanto eu durmo.',
+      rating: 5,
+    },
+    {
+      name: 'Alberto Ferraz',
+      company: 'Imobiliária',
+      text: 'Ele responde dúvidas sobre imóveis, agenda visitas automaticamente e ainda coleta os dados dos interessados automaticamente.',
       rating: 5,
     },
     {
       name: 'João Santos',
       company: 'Clínica Médica',
-      text: 'O agendamento automatizado revolucionou nossa operação. Reduzimos 80% das ligações para marcação.',
-      rating: 5,
-    },
-    {
-      name: 'Ana Costa',
-      company: 'Restaurante Gourmet',
-      text: 'Nossos pedidos pelo WhatsApp triplicaram. O bot entende perfeitamente nosso cardápio e promoções.',
+      text: 'Aumentamos em 80% dos agendamentos de consultas pelo whatsapp.',
       rating: 5,
     },
   ];
@@ -174,7 +174,7 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <main>
-        <section className='pt-28 sm:pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden flex items-center'>
+        <section className='pt-28 sm:pt-32 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden flex items-center'>
           <div className='absolute inset-0 bg-gradient-to-r from-emerald-600/5 to-teal-600/5 rounded-full blur-3xl transform -translate-y-1/2'></div>
           <div className='max-w-7xl mx-auto text-center relative w-full'>
             <div className='opacity-100 translate-y-0 transition-all duration-1000'>
@@ -218,7 +218,7 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-
+        <div className='border-t mb-16 border-gray-800'></div>
         {/* Features Section */}
         <section
           className='bg-gray-900 relative'
@@ -321,7 +321,7 @@ export default function LandingPage() {
                 Pronto para revolucionar seu atendimento?
               </SEOHeading>
               <p className='text-gray-300 mb-8 max-w-md mx-auto'>
-                Junte-se a centenas de empresas que já transformaram seus
+                Junte-se às empresas que já transformaram seus
                 resultados com a Z Agentes
               </p>
               <div className='flex flex-col sm:flex-row gap-4 justify-center items-center'>
