@@ -181,7 +181,7 @@ export default function LandingPage() {
             <div className='inline-flex items-center px-4 py-2 border border-gray-700 rounded-full text-gray-300 text-sm font-medium mb-8'>
                 <Sparkles className='h-4 w-4 mr-2 text-emerald-500' />
                 <span className='text-xs bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent sm:text-sm'>
-                  IA de Nova Geração para WhatsApp
+                  IA de nova geração para WhatsApp
                 </span>
               </div>
               <SEOHeading
@@ -332,7 +332,7 @@ export default function LandingPage() {
                   Começar agora
                 </WhatsAppButton>
                 <div className='text-sm text-gray-300'>
-                  ⚡ Configuração em menos de 24h
+                  ⚡Configuração em menos de 24h
                 </div>
               </div>
             </div>
