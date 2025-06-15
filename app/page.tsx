@@ -423,10 +423,10 @@ export default function LandingPage() {
                   <Phone className='h-5 w-5 text-emerald-400' />
                   <span className='text-gray-400'>(13) 99692-5983</span>
                 </div>
-                <div className='flex items-center space-x-3'>
+{/*                 <div className='flex items-center space-x-3'>
                   <MapPin className='h-5 w-5 text-emerald-400' />
                   <span className='text-gray-400'>São Paulo, SP</span>
-                </div>
+                </div> */}
               </div>
             </div>
 
