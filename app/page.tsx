@@ -279,7 +279,7 @@ export default function LandingPage() {
             </div>
 
             {/* Stats Section */}
-            <div className='bg-gradient-to-r from-emerald-600 to-teal-600 rounded-2xl p-8 md:p-12 text-white text-center mb-16'>
+{/*             <div className='bg-gradient-to-r from-emerald-600 to-teal-600 rounded-2xl p-8 md:p-12 text-white text-center mb-16'>
               <SEOHeading
                 level={3}
                 className='text-2xl md:text-3xl font-bold mb-8'
@@ -310,7 +310,7 @@ export default function LandingPage() {
                   <div className='text-emerald-100'>Clientes satisfeitos</div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* CTA Section */}
             <div className='text-center mb-20'>
@@ -339,7 +339,7 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section
+        {/* <section
           className='py-24 bg-gradient-to-r from-emerald-600 to-teal-600'
           aria-labelledby='testimonials-heading'
         >
@@ -388,7 +388,7 @@ export default function LandingPage() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
 
       {/* Footer */}
